@@ -64,20 +64,22 @@
   <h2 style="text-align:center;margin-bottom:10px;">🔥 NOS COMPTES DISPONIBLES</h2>
 
   <div class="grid">
+    <!-- COMPTE 1 : 4000 FCFA -->
     <div class="card">
       <img src="" alt="Compte">
       <h3 style="color:#00BFFF;">COMPTE EFOOTBALL 2026</h3>
       <div style="color:#aaa;font-size:12px;">⭐ 3500 Coins | 5 Légendes</div>
-      <div class="price">25 000 FCFA</div>
-      <button onclick="payerWave(25000, 'Compte Efootball 25k')" class="btn-buy">Payer avec Wave</button>
+      <div class="price">4 000 FCFA</div>
+      <button onclick="payerWave(4000, 'le compte')" class="btn-buy">Payer avec Wave</button>
     </div>
 
+    <!-- COMPTE 2 : 3000 FCFA -->
     <div class="card">
       <img src="" alt="Compte">
       <h3 style="color:#00BFFF;">COMPTE EFOOTBALL PRO</h3>
       <div style="color:#aaa;font-size:12px;">⭐ 8000 Coins | 10 Légendes</div>
-      <div class="price">45 000 FCFA</div>
-      <button onclick="payerWave(45000, 'Compte Efootball 45k')" class="btn-buy">Payer avec Wave</button>
+      <div class="price">3 000 FCFA</div>
+      <button onclick="payerWave(3000, 'le compte')" class="btn-buy">Payer avec Wave</button>
     </div>
   </div>
 </div>
@@ -115,9 +117,7 @@
   }
   
   function ouvrirWave() {
-    // Ouvre l'app Wave
     window.location.href = "wave://";
-    // Si pas d'app, ouvre le site
     setTimeout(() => { window.open("https://www.wave.com/fr/", "_blank"); }, 1000);
   }
 
