@@ -18,17 +18,42 @@
     .card img{width:100%;border-radius:10px;margin-bottom:10px;background:#222;height:160px;object-fit:cover}
     .price{font-size:20px;font-weight:800;color:#FFD700;margin:8px 0}
     .btn-buy{background:#00BFFF;color:#000;padding:10px;border-radius:8px;display:block;font-weight:700;border:none;width:100%;cursor:pointer}
-    
-    /* POPUP PAIEMENT */
-    .popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.8);display:none;align-items:center;justify-content:center;z-index:999}
-    .popup-content{background:#111;border:2px solid #00BFFF;border-radius:12px;padding:20px;width:90%;max-width:400px;text-align:center}
-    .popup-content h3{color:#00BFFF;margin-bottom:10px}
-    .num-wave{background:#000;border:1px dashed #00BFFF;padding:12px;border-radius:8px;font-size:18px;font-weight:800;margin:15px 0}
-    .copy-btn{background:#25D366;color:#fff;padding:8px;border:none;border-radius:6px;width:100%;margin-bottom:10px;cursor:pointer;font-weight:700}
-    .open-wave{background:#00BFFF;color:#000;padding:10px;border:none;border-radius:6px;width:100%;cursor:pointer;font-weight:800}
-    .close-popup{background:#333;color:#fff;padding:8px;border:none;border-radius:6px;width:100%;margin-top:10px;cursor:pointer}
-    
-    /* SECTION BONUS */
+    .btn-buy:hover{background:#33ccff}
+
+    /* ============ POPUP PAIEMENT PROFESSIONNEL ============ */
+    .popup{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);display:none;align-items:center;justify-content:center;z-index:999}
+    .popup-content{background:#111;border:2px solid #00BFFF;border-radius:14px;padding:22px;width:90%;max-width:420px;text-align:center;max-height:92vh;overflow-y:auto}
+    .popup-header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222;padding-bottom:10px;margin-bottom:14px}
+    .popup-header h3{color:#00BFFF;font-size:18px}
+    .popup-close{background:none;border:none;color:#888;font-size:20px;cursor:pointer}
+    .popup-close:hover{color:#fff}
+
+    /* Indicateur d'étapes */
+    .steps-indicator{display:flex;justify-content:center;gap:8px;margin-bottom:18px}
+    .step-ind{flex:1;background:#1a1a1a;border:1px solid #333;border-radius:10px;padding:8px 4px;font-size:12px;color:#888;font-weight:800;line-height:1.2}
+    .step-ind.active{background:#0d3b4d;border-color:#00BFFF;color:#fff}
+    .step-ind small{font-weight:400;font-size:10px}
+
+    /* Panneaux d'étapes */
+    .step-panel{display:none}
+    .step-panel.show{display:block}
+    .recap-box{background:#0a0a0a;border:1px solid #333;border-radius:10px;padding:14px;margin:14px 0;text-align:left;font-size:14px;line-height:2}
+    .recap-box b{color:#FFD700}
+    .num-wave{background:#000;border:1px dashed #00BFFF;padding:12px;border-radius:8px;font-size:20px;font-weight:800;letter-spacing:1px;margin:14px 0}
+    .copy-btn{background:#25D366;color:#fff;padding:10px;border:none;border-radius:8px;width:100%;margin-bottom:8px;cursor:pointer;font-weight:800}
+    .open-wave{background:#00BFFF;color:#000;padding:10px;border:none;border-radius:8px;width:100%;cursor:pointer;font-weight:800}
+    .btn-next{background:#00BFFF;color:#000;padding:11px;border:none;border-radius:8px;width:100%;margin-top:12px;cursor:pointer;font-weight:800;font-size:14px}
+    .confirm-btn{background:linear-gradient(90deg,#25D366,#00BFFF);color:#000;padding:13px;border:none;border-radius:8px;width:100%;margin-top:12px;cursor:pointer;font-weight:900;font-size:15px}
+    .hint{color:#aaa;font-size:12px;margin:12px 0 6px;text-align:left}
+    .popup-content input{width:100%;padding:11px;border-radius:8px;border:1px solid #333;background:#0a0a0a;color:#fff;font-size:14px;margin-top:4px}
+    .popup-content input:focus{outline:none;border-color:#00BFFF}
+    .secure-badge{display:flex;align-items:center;justify-content:center;gap:6px;color:#25D366;font-size:12px;font-weight:700;margin-top:12px;border-top:1px solid #222;padding-top:10px}
+    .close-popup{background:#333;color:#fff;padding:9px;border:none;border-radius:8px;width:100%;margin-top:10px;cursor:pointer;font-weight:700}
+    #confirmMsg{font-size:13px;margin-top:10px;min-height:18px}
+    #confirmMsg.ok{color:#25D366}
+    #confirmMsg.err{color:#ff5555}
+
+    /* ============ SECTION BONUS ============ */
     .bonus-section{background:linear-gradient(180deg,#0f1f0f,#0a140a);border:2px solid #25D366;border-radius:12px;padding:20px;margin:40px 0;text-align:center}
     .progress-bar{background:#1a1a1a;border-radius:50px;height:10px;overflow:hidden;margin-top:8px}
     .progress-fill{background:#25D366;width:0%;height:100%;transition:.4s}
@@ -42,7 +67,7 @@
 
 <section class="hero">
   <h2>ACHÈTE DES COMPTES EFOOTBALL PRO</h2>
-  <p>Comptes vérifiés • Livraison en 5min • Paiement Wave</p>
+  <p>Comptes vérifiés • Livraison en 5min • Paiement Wave sécurisé</p>
   <a href="#catalogue" class="btn">VOIR LE CATALOGUE</a>
 </section>
 
@@ -104,7 +129,7 @@
     <div class="card">
       <img src="https://i.postimg.cc/CRjf2kS8/4c6982b7-7415-4cbf-a829-4fadfb9c0cc5.jpg" alt="Compte">
       <h3 style="color:#00BFFF;">FORCE COLLECTIVE 3246</h3>
-      < <div style="color:#aaa;font-size:12px;">⭐ Compte Efootball</div>
+      <div style="color:#aaa;font-size:12px;">⭐ Compte Efootball</div>
       <div class="price">5 000 FCFA</div>
       <button onclick="payerWave(5000, 'Force Collective 3246')" class="btn-buy">Payer avec Wave</button>
     </div>
@@ -175,44 +200,159 @@
   </div>
 </div>
 
-<!-- POPUP PAIEMENT WAVE -->
+<!-- ============ POPUP PAIEMENT PROFESSIONNEL (3 étapes) ============ -->
 <div class="popup" id="popupWave">
   <div class="popup-content">
-    <h3>💳 PAIEMENT WAVE</h3>
-    <p id="popupText"></p>
-    <p style="color:#aaa;font-size:13px;margin-top:10px;">1. Copie le numéro ci-dessous</p>
-    <div class="num-wave" id="numeroWave">05 75 74 05 84</div>
-    <button class="copy-btn" onclick="copierNumero()">📋 Copier le numéro</button>
-    <p style="color:#aaa;font-size:13px;">2. Ouvre Wave et envoie le montant</p>
-    <button class="open-wave" onclick="ouvrirWave()">Ouvrir l'app Wave</button>
-    <p style="color:#aaa;font-size:12px;margin-top:10px;">3. Envoie la capture au 05 75 74 05 84</p>
+
+    <div class="popup-header">
+      <h3>🔒 Paiement sécurisé Wave</h3>
+      <button class="popup-close" onclick="fermerPopup()">✕</button>
+    </div>
+
+    <!-- Indicateur d'étapes -->
+    <div class="steps-indicator">
+      <div class="step-ind active" id="ind1">1<br><small>Commande</small></div>
+      <div class="step-ind" id="ind2">2<br><small>Paiement</small></div>
+      <div class="step-ind" id="ind3">3<br><small>Confirmation</small></div>
+    </div>
+
+    <!-- ÉTAPE 1 : RÉCAPITULATIF -->
+    <div class="step-panel show" id="panel1">
+      <p style="font-size:14px;color:#aaa;">Vérifiez votre commande avant de payer :</p>
+      <div class="recap-box">
+        <div>🛒 Produit : <b id="popupText"></b></div>
+        <div>💰 Montant : <b id="popupMontant"></b></div>
+        <div>📱 Bénéficiaire : <b>Melo Store CI</b></div>
+      </div>
+      <button class="btn-next" onclick="etape(2)">Continuer vers le paiement →</button>
+    </div>
+
+    <!-- ÉTAPE 2 : PAIEMENT WAVE -->
+    <div class="step-panel" id="panel2">
+      <p style="font-size:14px;color:#aaa;">Envoyez <b style="color:#FFD700;" id="montant2"></b> via Wave à :</p>
+      <div class="num-wave">05 75 74 05 84</div>
+      <button class="copy-btn" onclick="copierNumero()">📋 Copier le numéro Wave</button>
+      <button class="open-wave" onclick="ouvrirWave()">Ouvrir l'application Wave</button>
+      <p class="hint">💡 Après le paiement, Wave affiche un <b>numéro de transaction</b> (ex : TRX123456). Notez-le :</p>
+      <input type="text" id="trxInput" placeholder="Numéro de transaction (ex : TRX123456)">
+      <button class="btn-next" onclick="etape(3)">J'ai payé — Continuer →</button>
+    </div>
+
+    <!-- ÉTAPE 3 : CONFIRMATION -->
+    <div class="step-panel" id="panel3">
+      <p style="font-size:14px;color:#aaa;">Dernière étape : laissez-nous un contact</p>
+      <p class="hint">📞 Votre e-mail ou WhatsApp (pour recevoir le compte)</p>
+      <input type="text" id="contactInput" placeholder="exemple@gmail.com ou +225 07 00 00 00 00">
+      <button class="confirm-btn" onclick="confirmerPaiement()">✅ Confirmer ma commande</button>
+      <p id="confirmMsg"></p>
+    </div>
+
+    <div class="secure-badge">🔒 Paiement 100% sécurisé — EFOOT STORE CI</div>
     <button class="close-popup" onclick="fermerPopup()">Fermer</button>
   </div>
 </div>
 
 <script>
   let numeroMarchand = "0575740584"; // TON NUMERO WAVE SANS ESPACE
-  
+  let montantEnCours = 0;
+  let produitEnCours = "";
+
+  // ======================================================
+  // ⚠️ OPTIONNEL : envoi automatique des commandes par e-mail.
+  // 1) Va sur script.google.com → Nouveau projet → colle le script
+  //    donné en bas de cette réponse → Déployer → Application Web.
+  // 2) Colle ici l'URL qui finit par /exec.
+  // Si tu laisses vide (''), la commande s'ouvrira dans la
+  // messagerie du client vers repondsjune@gmail.com (envoi manuel).
+  // ======================================================
+  const SCRIPT_URL = ''; // ← colle ton URL /exec ici si tu veux l'envoi auto
+
   function payerWave(montant, produit) {
+    montantEnCours = montant;
+    produitEnCours = produit;
+    document.getElementById('popupText').textContent = produit;
+    document.getElementById('popupMontant').textContent = montant.toLocaleString('fr-FR') + ' FCFA';
+    document.getElementById('montant2').textContent = montant.toLocaleString('fr-FR') + ' FCFA';
+    document.getElementById('trxInput').value = '';
+    document.getElementById('contactInput').value = '';
+    document.getElementById('confirmMsg').textContent = '';
+    document.getElementById('confirmMsg').className = '';
     document.getElementById('popupWave').style.display = 'flex';
-    document.getElementById('popupText').innerHTML = `Vous allez payer <b>${montant} FCFA</b> pour <b>${produit}</b>`;
+    etape(1);
   }
-  
+
+  // Navigation entre les 3 étapes
+  function etape(n) {
+    for (let i = 1; i <= 3; i++) {
+      document.getElementById('panel' + i).classList.toggle('show', i === n);
+      document.getElementById('ind' + i).classList.toggle('active', i <= n);
+    }
+  }
+
   function fermerPopup() {
     document.getElementById('popupWave').style.display = 'none';
   }
-  
+
   function copierNumero() {
-    navigator.clipboard.writeText(numeroMarchand);
-    alert('Numéro copié ! Colle-le dans Wave');
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(numeroMarchand).then(() => alert('Numéro copié : 05 75 74 05 84 — colle-le dans Wave'));
+    } else {
+      prompt('Copiez ce numéro Wave :', numeroMarchand);
+    }
   }
-  
+
   function ouvrirWave() {
     window.location.href = "wave://";
     setTimeout(() => { window.open("https://www.wave.com/fr/", "_blank"); }, 1000);
   }
 
-  // COMPTEUR BONUS
+  // Confirmation finale → envoi de la commande
+  function confirmerPaiement() {
+    const trx = document.getElementById('trxInput').value.trim();
+    const contact = document.getElementById('contactInput').value.trim();
+    const msg = document.getElementById('confirmMsg');
+
+    if (!trx) { msg.textContent = '⚠️ Indiquez le numéro de transaction Wave.'; msg.className = 'err'; return; }
+    if (!contact) { msg.textContent = '⚠️ Indiquez votre e-mail ou WhatsApp.'; msg.className = 'err'; return; }
+
+    const montantFmt = montantEnCours.toLocaleString('fr-FR') + ' FCFA';
+    const corps =
+      'NOUVELLE COMMANDE EFOOT STORE CI\n' +
+      '==============================\n\n' +
+      '🎮 Produit : ' + produitEnCours + '\n' +
+      '💰 Montant : ' + montantFmt + '\n' +
+      '✅ Numéro de transaction Wave : ' + trx + '\n' +
+      '📬 Contact client : ' + contact + '\n' +
+      '🕐 Heure : ' + new Date().toLocaleString('fr-FR');
+
+    if (SCRIPT_URL) {
+      // ENVOI AUTOMATIQUE via Google Apps Script
+      fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ produit: produitEnCours, montant: montantFmt, trx: trx, contact: contact })
+      })
+      .then(() => {
+        msg.textContent = '✅ Commande envoyée automatiquement ! Nous vous contactons très vite.';
+        msg.className = 'ok';
+      })
+      .catch(() => {
+        msg.textContent = '❌ Erreur d\'envoi. Contactez-nous : 05 75 74 05 84';
+        msg.className = 'err';
+      });
+    } else {
+      // REPLI : ouverture de la messagerie vers ton adresse
+      const mailto = 'mailto:repondsjune@gmail.com?subject=' +
+                     encodeURIComponent('Commande EFOOT — ' + produitEnCours + ' (' + montantFmt + ')') +
+                     '&body=' + encodeURIComponent(corps);
+      window.location.href = mailto;
+      msg.textContent = '✅ Ouverture de votre messagerie... Envoyez le mail pour finaliser.';
+      msg.className = 'ok';
+    }
+  }
+
+  // ============ COMPTEUR BONUS (inchangé) ============
   let shareCount = localStorage.getItem('efootShareCount') || 0;
   shareCount = parseInt(shareCount);
   function addShare() {
