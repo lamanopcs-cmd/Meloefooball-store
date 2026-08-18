@@ -4,7 +4,7 @@
   
   <!-- PAGE ACCUEIL -->
   <url>
-    <loc>https://tonpseudo.github.io/efoot-store/</loc>
+    <loc>https://lamanopcs-cmd.github.io/efoot-store/</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -12,15 +12,15 @@
 
   <!-- SECTION CATALOGUE -->
   <url>
-    <loc>https://tonpseudo.github.io/efoot-store/#catalogue</loc>
+    <loc>https://lamanopcs-cmd.github.io/efoot-store/#catalogue</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>a0.9</priority>
   </url>
 
   <!-- SECTION BONUS -->
   <url>
-    <loc>https://tonpseudo.github.io/efoot-store/#bonus</loc>
+    <loc>https://lamanopcs-cmd.github.io/efoot-store/#bonus</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
