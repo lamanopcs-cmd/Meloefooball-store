@@ -1,0 +1,3 @@
+Sitemap: https://lamanopcs-cmd.github.io/Meloefooball-store/sitemap.xml
+User-agent: *
+Allow: /
