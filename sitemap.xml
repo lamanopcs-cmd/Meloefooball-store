@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- PAGE ACCUEIL -->
   <url>
-    <loc>https://lamanopcs-cmd.github.io/Meloefooball-store/</loc>
+    <loc>https://tonpseudo.github.io/efoot-store/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- SECTION CATALOGUE -->
+  <url>
+    <loc>https://tonpseudo.github.io/efoot-store/#catalogue</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- SECTION BONUS -->
+  <url>
+    <loc>https://tonpseudo.github.io/efoot-store/#bonus</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
+
 </urlset>
